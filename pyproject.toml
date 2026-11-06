@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "action-recognition-claim-audit"
+version = "0.1.0"
+description = "Offline documentation claim auditor for clip labelling"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+
+[project.scripts]
+action-recognition-claim-audit = "action_recognition_claim_audit.audit:main"
+
+[tool.setuptools.packages.find]
+include = ["action_recognition_claim_audit*"]
